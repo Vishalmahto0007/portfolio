@@ -1,0 +1,38 @@
+section#contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  color: var(--main-text-secondary-color);
+  min-height: 50vh;
+}
+.info-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: left;
+}
+.type-contact {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+.type-contact img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.info-contact a {
+  color: var(--main-text-color);
+  transition: all 0.2s ease;
+}
+.info-contact a:hover {
+  cursor: pointer;
+  color: var(--main-primary-dark-color);
+}

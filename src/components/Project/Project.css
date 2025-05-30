@@ -1,0 +1,134 @@
+section#project {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+/* div#jobs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px 0px;
+  justify-content: space-around;
+  min-height: 50vh;
+} */
+
+div#jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ensures equal spacing */
+  padding: 50px 0px;
+  min-height: 50vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.job {
+  padding-top: 15px;
+  background-color: #2a3443;
+  width: 350px;
+  height: 370px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  text-align: justify;
+  transition: margin-top 0.3s ease;
+}
+
+div.text {
+  padding: 0 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+div.job img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 10px;
+}
+
+div.border {
+  width: 95%;
+  height: 7px;
+  margin: 0 auto;
+  background: #66fcf1;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.second {
+  display: none;
+  height: 100%;
+}
+
+.second .text {
+  display: flex;
+  flex-direction: column;
+}
+
+div.job:hover {
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+div.job:hover > .first {
+  display: none;
+}
+
+div.job:hover > .second {
+  display: flex;
+}
+
+div.techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+span.tech {
+  border: 2px solid var(--main-primary-color);
+  color: var(--main-primary-color);
+  padding: 0px 10px;
+  box-sizing: border-box;
+  border-radius: 29px;
+
+  margin-bottom: 10px;
+}
+
+span.tech:hover {
+  background-color: var(--main-primary-color);
+  color: var(--main-text-secondary-color);
+}
+
+div.job img {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.access-button {
+  display: flex;
+  margin-top: 10px;
+  background: #202833;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  text-decoration: none;
+  color: var(--main-primary-color) !important;
+  text-transform: uppercase;
+}
+
+.access-button:hover {
+  background: #66fcf112;
+  cursor: pointer;
+}

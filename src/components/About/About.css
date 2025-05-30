@@ -1,0 +1,112 @@
+section#about::before {
+  background-image: url("../../assets/bordatop.svg"),
+    url("../../assets/sombratop.svg");
+  background-size: contain;
+  background-color: var(--main-secondary-color);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 120px;
+  content: " ";
+  background-position: center bottom;
+}
+
+section#about::after {
+  background-image: url("../../assets/bordabottom.svg"),
+    url("../../assets/sombrabottom.svg");
+  background-size: contain;
+  background-color: var(--main-secondary-color);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 120px;
+  content: " ";
+  background-position: center top;
+}
+
+section#about {
+  display: flex;
+  background: #2a3443;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#about .about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 5%;
+}
+
+section#about .about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 5%;
+}
+
+.about-content h2 {
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+img#author {
+  width: 200px !important;
+  height: 200px !important;
+  background-size: cover;
+
+  border-radius: 50%;
+  border: 4px solid var(--main-primary-color);
+  padding: 7px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.about-content #author-info {
+  display: flex;
+  min-width: 250px;
+  max-width: 400px;
+  width: 20%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#author-info .access-button {
+  width: 100%;
+}
+
+.about-content #right-side {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+}
+
+img#author {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--main-primary-color);
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.about-content div#social-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.about-content img.icon {
+  width: 30px;
+  height: 30px;
+}
+.about-content h3 {
+  display: flex;
+  justify-content: center;
+}
+.about-content p {
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-align: justify;
+}

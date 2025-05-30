@@ -1,0 +1,80 @@
+#start {
+  padding: 20px 10%;
+
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
+  min-height: 500px;
+}
+#start p {
+  max-width: 350px;
+}
+
+div#apresentation {
+  flex: 1;
+}
+
+div#apresentation span:first-child {
+  display: block;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 27px;
+  color: var(--main-primary-color);
+  text-transform: uppercase;
+}
+div#apresentation h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+}
+div#apresentation p {
+  text-align: justify;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9rem;
+  line-height: 26px;
+  max-width: 610px;
+}
+div#apresentation a {
+  display: inline-block;
+  border: 2px solid #66fcf1;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 60px;
+  text-transform: uppercase;
+  color: var(--main-primary-color);
+  transition: background 0.2s linear;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+div#apresentation a:active {
+  font-weight: normal;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px -2px rgba(0, 0, 0, 0.75);
+}
+
+div#apresentation a:hover {
+  background: #66fcf112;
+  cursor: pointer;
+}
+
+div#programmer {
+  background: url("../../assets/dev.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+}

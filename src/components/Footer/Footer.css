@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  border-bottom: 5px solid var(--main-primary-color);
+  background: #1b222c;
+}
+footer span {
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+footer span a {
+  color: var(--main-primary-dark-color) !important;
+}
