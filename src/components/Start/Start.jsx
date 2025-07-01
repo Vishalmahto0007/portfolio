@@ -4,7 +4,7 @@ export default function Start() {
   return (
     <section id="start">
       <div id="apresentation">
-        <span id="type-name">FULL-STACK DEVELOPER</span>
+        <span id="type-name">Software Engineer</span>
         <h1>Vishal Mahto</h1>
         <p>
           Welcome to my personal page.
@@ -12,7 +12,9 @@ export default function Start() {
           Here I will post some projects developed and the technologies used
           during the process.
         </p>
-        <a>Download Resume</a>
+        <a href="/Vishal_Mahto_Resume.pdf" download>
+          Download Resume
+        </a>
       </div>
       <div id="programmer"></div>
     </section>

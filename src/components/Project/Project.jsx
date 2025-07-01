@@ -1,4 +1,5 @@
 import "./Project.css";
+import projectData from "../../data/projectData"; // adjust path as needed
 
 export default function Project() {
   return (
@@ -9,172 +10,42 @@ export default function Project() {
         </div>
         Project
       </h2>
+
       <div id="jobs">
-        <div className="job">
-          <div className="first">
-            <img src="pizza-mania.png" alt="Portfolio Wine App" />
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Web App.</p>
-            </div>
-          </div>
-          <div className="second">
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Full of used, backend and front-end.</p>
-              <div className="techs">
-                <span className="tech">HTML 5</span>
-                <span className="tech">CSS 3</span>
-                <span className="tech">Javascript</span>
-                <span className="tech">Typescript</span>
-                <span className="tech">Node</span>
-                <span className="tech">MongoDB</span>
-              </div>
-              <div className="btn-access">
-                {" "}
-                <a
-                  className="access-button"
-                  target="_BLANK"
-                  href="https://github.com/vishalmahto0007"
-                >
-                  Access
-                </a>
+        {projectData.map((project, index) => (
+          <div className="job" key={index}>
+            <div className="first">
+              <img src={project.image} alt="Project preview" />
+              <div className="text">
+                <h4>{project.title}</h4>
+                <p>{project.shortDesc}</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="job">
-          <div className="first">
-            <img src="pizza-mania.png" alt="Portfolio Wine App" />
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Web App.</p>
-            </div>
-          </div>
-          <div className="second">
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Full of used, backend and front-end.</p>
-              <div className="techs">
-                <span className="tech">HTML 5</span>
-                <span className="tech">CSS 3</span>
-                <span className="tech">Javascript</span>
-                <span className="tech">Typescript</span>
-                <span className="tech">Node</span>
-                <span className="tech">MongoDB</span>
-              </div>
-              <div className="btn-access">
-                {" "}
-                <a
-                  className="access-button"
-                  target="_BLANK"
-                  href="https://github.com/vishalmahto0007"
-                >
-                  Access
-                </a>
+            <div className="second">
+              <div className="text">
+                <h4>{project.title}</h4>
+                <p>{project.longDesc}</p>
+                <div className="techs">
+                  {project.techs.map((tech, i) => (
+                    <span className="tech" key={i}>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="btn-access">
+                  <a
+                    className="access-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.link}
+                  >
+                    Access
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="job">
-          <div className="first">
-            <img src="pizza-mania.png" alt="Portfolio Wine App" />
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Web App.</p>
-            </div>
-          </div>
-          <div className="second">
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Full of used, backend and front-end.</p>
-              <div className="techs">
-                <span className="tech">HTML 5</span>
-                <span className="tech">CSS 3</span>
-                <span className="tech">Javascript</span>
-                <span className="tech">Typescript</span>
-                <span className="tech">Node</span>
-                <span className="tech">MongoDB</span>
-              </div>
-              <div className="btn-access">
-                {" "}
-                <a
-                  className="access-button"
-                  target="_BLANK"
-                  href="https://github.com/vishalmahto0007"
-                >
-                  Access
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="job">
-          <div className="first">
-            <img src="pizza-mania.png" alt="Portfolio Wine App" />
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Web App.</p>
-            </div>
-          </div>
-          <div className="second">
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Full of used, backend and front-end.</p>
-              <div className="techs">
-                <span className="tech">HTML 5</span>
-                <span className="tech">CSS 3</span>
-                <span className="tech">Javascript</span>
-                <span className="tech">Typescript</span>
-                <span className="tech">Node</span>
-                <span className="tech">MongoDB</span>
-              </div>
-              <div className="btn-access">
-                {" "}
-                <a
-                  className="access-button"
-                  target="_BLANK"
-                  href="https://github.com/vishalmahto0007"
-                >
-                  Access
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="job">
-          <div className="first">
-            <img src="pizza-mania.png" alt="Portfolio Wine App" />
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Web App.</p>
-            </div>
-          </div>
-          <div className="second">
-            <div className="text">
-              <h4>Website / Mobile - App</h4>
-              <p>Full of used, backend and front-end.</p>
-              <div className="techs">
-                <span className="tech">HTML 5</span>
-                <span className="tech">CSS 3</span>
-                <span className="tech">Javascript</span>
-                <span className="tech">Typescript</span>
-                <span className="tech">Node</span>
-                <span className="tech">MongoDB</span>
-              </div>
-              <div className="btn-access">
-                {" "}
-                <a
-                  className="access-button"
-                  target="_BLANK"
-                  href="https://github.com/vishalmahto0007"
-                >
-                  Access
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
