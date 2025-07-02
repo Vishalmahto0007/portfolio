@@ -1,46 +1,45 @@
-# 🚀 Portfolio Website
+# 🚀 Portfolio Website – Vishal Mahto
 
-Welcome to my personal portfolio website! This is a responsive, modern web application showcasing my skills, experience, and projects as a Full Stack Developer specializing in the **MERN stack**, JavaScript, and other technologies.
+Welcome to my **personal portfolio website**! This is a fully responsive, modern web application that highlights my skills, experience, and projects as a **Software Engineer** specializing in the **MERN stack**, JavaScript, and related technologies.
 
 ---
 
 ## 🌐 Live Demo
 
+🔗 **Visit Now**: [https://vishalmahto-portfolio.vercel.app]
+
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend**: HTML, CSS (Tailwind / Bootstrap), JavaScript, React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB / PostgreSQL
-- **Other Tools**: Git, GitHub, Redux, Figma, Vercel/Netlify
+### 🌍 Frontend
+
+- **React.js**
+- **HTML5 & CSS3**
+- **JavaScript**
+
+### ⚙️ Tools & Integrations
+
+- **Git & GitHub**
+- **Vercel**
 
 ---
 
-## 📂 Features
+# Clone the repository
 
-- 📱 Responsive design for mobile and desktop
-- 🧭 Smooth navigation with dynamic sections
-- 💼 Project showcase with tech stack tags
-- 📧 Contact form integration with email
-- 🌙 Dark mode (optional feature)
-- 🔒 Secure and fast with optimized assets
+git clone https://github.com/vishalmahto0007/portfolio.git
 
----
+# Navigate into the project directory
 
-## 🧠 Folder Structure
+cd portfolio
 
-```bash
-portfolio/
-├── public/
-│   └── assets/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── App.tsx
-│   └── index.tsx
-├── .gitignore
-├── README.md
-└── package.json
-```
+# Install dependencies
+
+npm install
+
+# Run the development server
+
+npm run dev
+
+👨‍🍳 Author
+Vishal Mahto
